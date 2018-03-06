@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html\>
 <html>
 
 <head>
@@ -10,6 +10,18 @@
 	<meta name="keywords" content="Aqui palabras claves">
 	<!--Para los estilos CSS-->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!--Llama a los Slides-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+ 	<script src="js/jquery.slides.min.js"></script>
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 227,
+
+      });
+    });
+  </script> 
 	<!--Titulo de nuestra Web-->
 	<title>Mi pagina</title>
 </head>
@@ -20,15 +32,16 @@
 		<div id="subheader">
 			<div id="logotipo">
 				<p><a href="#">Mi pagina</a></p>
-				<!--Menu-->
-				<nav>
-					<ul>
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-				</nav>
 			</div>
+				<!--Menu-->
+			<nav>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+			
 		</div>
 	</header>
 	<!--Contenedor principal-->
@@ -36,18 +49,25 @@
 		<!--Main-->
 		<section id="main">
 			
-			<section id="slideshow"></section>
+			<section id="slideshow">
+				<div class="slides_ container">
+				    <div id="slides">
+					    <div><a href="#"><img src="imagenes/slideshets/Yosemite2.jpg" alt="Imagen 1"></a></div>
+					    <div><a href="#"><img src="imagenes/slideshets/Yosemite4.jpg" alt="Imagen 2"></a></div>
+					</div>
+				</div>
+			</section>
 
 			<section id="bienvenidos">
 				<article>
 					<hgroup><h2>Bienvenido a nuestro sitio Web</h2></hgroup>
 					<p>
 						<ul>
-							<li>Morbi sit amet dui sed magna posuere aliquam.</li>
-							<li>Ut eget nisl tincidunt, posuere elit ut, varius eros.</li>
-							<li>Vestibulum sodales odio vitae sapien dapibus, id venenatis lectus luctus.</li>
-							<li>Mauris non enim vel neque molestie blandit.</li>
-							<li>Praesent ut eros tempus, vehicula mi ultricies, pellentesque enim.</li>
+							<li>+ Morbi sit amet dui sed magna posuere aliquam.</li>
+							<li>+ Ut eget nisl tincidunt, posuere elit ut, varius eros.</li>
+							<li>+ Vestibulum sodales odio vitae sapien dapibus, id venenatis lectus luctus.</li>
+							<li>+ Mauris non enim vel neque molestie blandit.</li>
+							<li>+ Praesent ut eros tempus, vehicula mi ultricies, pellentesque enim.</li>
 						</ul>
 					</p>
 				</article>
@@ -85,10 +105,10 @@
 					<h3>Articulos Recientes</h3>
 					<ul>
 						<ul>
-							<li><a href="">Morbi sit amet dui sed magna</a></li>
+							<li><a href="">Morbi sit amet</a></li>
 							<li><a href="">Ut eget nisl tincidunt</a></li>
-							<li><a href="">Vestibulum sodales lectus luctus</a></li>
-							<li><a href="">Mauris non enim vel neque molestie</a></li>
+							<li><a href="">Vest uctus</a></li>
+							<li><a href="">Mauris non  neque molestie</a></li>
 							<li><a href="">Praesent ut eros tempus</a></li>
 						</ul>
 					</ul>
@@ -96,7 +116,7 @@
 
 				<section class="widget">
 					<h3>Articulos Recientes</h3>
-					<img src="imagenes/publicidad.jpg" title="Publicidad" alt="Publicidad">
+					<img class="publicidad" src="imagenes/publicidad.jpg" title="Publicidad" alt="Publicidad">
 				</section>
 			</aside>
 
@@ -119,7 +139,7 @@
 
 			<section id="redes-s">
 				<div class="email"><a href="#"></a></div>
-				<div class="twiter"><a href="#"></a></div>
+				<div class="twitter"><a href="#"></a></div>
 				<div class="youtube"><a href="#"></a></div>
 				<div class="facebook"><a href="#"></a></div>
 			</section>
@@ -127,7 +147,7 @@
 		</footer>
 
 		<!--Derechos de autor-->
-		<div id="copyrigth"><p>Josué Girón - iiK' Soluciones®</p></div>
+		<div id="copyright"><p>Copyright: Josué Girón - iiK' Soluciones ® - Tel. 4246-3482</p></div>
 
 	</section>
 </body>
